@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <title>MonsterGYM</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validateForm() {
+                var name = document.forms["myForm"]["name"];
+                var email = document.forms["myForm"]["email"];
+                var message = document.forms["myForm"]["message"];
+
+                if (name.value == "") {
+                    document.getElementById('errorname').innerHTML = "Please enter a valid name";
+                    name.focus();
+                    return false;
+                } else {
+                    document.getElementById('errorname').innerHTML = "";
+                }
+
+                if (email.value == "") {
+                    document.getElementById('erroremail').innerHTML = "Please enter a valid email address";
+                    email.focus();
+                    return false;
+                } else {
+                    document.getElementById('erroremail').innerHTML = "";
+                }
+
+                if (email.value.indexOf("@", 0) < 0) {
+                    document.getElementById('erroremail').innerHTML = "Please enter a valid email address";
+                    email.focus();
+                    return false;
+                }
+
+                if (email.value.indexOf(".", 0) < 0) {
+                    document.getElementById('erroremail').innerHTML = "Please enter a valid email address";
+                    email.focus();
+                    return false;
+                }
+
+                if (message.value == "") {
+                    document.getElementById('errormsg').innerHTML = "Please enter a valid message";
+                    message.focus();
+                    return false;
+                } else {
+                    document.getElementById('errormsg').innerHTML = "";
+                }
+
+                return true;
+            }
+        </script>
+
+        <title>MonsterGYM</title>
+    </head>
+
+    <body class="cont">
+        <header>
+            <a href="#" class="logo"><span>Monster</span>GYM</a>
+            <ul class="navibar">
+                <li><a href="./index.html">acceuil</a></li>
+                <li><a href="./2.html">A propos</a></li>
+                <li><a href="./programme.html">abonnements</a></li>
+                <li><a href="./contact.html">contacter nous</a></li>
+                <li><a href="./trouver.html">trouvez nous</a></li>
+                <a href="#" class="btn-connexion">connexion</a>
+            </ul>
+
+        </header>
+        <form class="form">
+            <h2>contacter nous</h2>
+            <p type="Name:"><input placeholder="ecrivez votre nom ici.."></input>
+            </p>
+            <p type="Email:"><input placeholder="votre e-mail pour qu'on vous repond.."></input>
+            </p>
+            <p type="Message:"><input placeholder="votre message ou question.."></input>
+            </p>
+            <button>envoyer</button>
+            <div>
+                <span class="fa fa-phone"></span>0608189146
+                <span class="fa fa-envelope-o"></span> MonsterGYM@MonsterGYM.com
+            </div>
+        </form>
+
+
+
+    </body>
+
+    </html>

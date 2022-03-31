@@ -1,0 +1,113 @@
+                                        * {
+                                            margin: 0px;
+                                            padding: 0px;
+                                            box-sizing: border-box;
+                                            font-family: 'poppins', sans-serif;
+                                            scroll-behavior: smooth;
+                                        }
+                                        
+                                        p {
+                                            font-weight: 300;
+                                            color: #1111;
+                                        }
+                                        
+                                        header {
+                                            position: fixed;
+                                            top: 0%;
+                                            left: 0%;
+                                            padding: 20px;
+                                            width: 100%;
+                                            z-index: 1;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            transition: 0.6s;
+                                            background: black;
+                                        }
+                                        
+                                        .logo {
+                                            color: turquoise;
+                                            font-weight: bold;
+                                            font-size: 2em;
+                                            text-decoration: none;
+                                        }
+                                        
+                                        .logo span {
+                                            color: rgb(255, 255, 255);
+                                        }
+                                        
+                                        .navibar {
+                                            display: flex;
+                                            position: relative;
+                                        }
+                                        
+                                        .navibar li {
+                                            list-style: none;
+                                        }
+                                        
+                                        .navibar a {
+                                            color: rgb(255, 255, 255);
+                                            text-decoration: none;
+                                            padding: 20px;
+                                            font-weight: 720;
+                                        }
+                                        
+                                        .btn-connexion {
+                                            margin: -20px;
+                                            margin-left: 10px;
+                                        }
+                                        
+                                        header .navibar li a:hover {
+                                            color: aqua;
+                                        }
+                                        
+                                        .btn-connexion:hover {
+                                            color: aqua;
+                                        }
+                                        
+                                        .bann1 {
+                                            position: relative;
+                                            width: 100%;
+                                            min-height: 100vh;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            background-image: url("../prjt/wp2639541.jpg");
+                                            background-size: cover;
+                                        }
+                                        
+                                        .bann1 .contenu1 {
+                                            max-width: 70%;
+                                            text-align: center;
+                                        }
+                                        
+                                        .bann1 .contenu1 h2 {
+                                            color: aqua;
+                                            font-size: 1.8em;
+                                            text-transform: capitalize;
+                                        }
+                                        
+                                        .contenu1 p:nth-child(2) {
+                                            color: rgb(255, 255, 255);
+                                            font-size: 1.7em;
+                                            font-weight: bolder;
+                                        }
+                                        
+                                        .progg {
+                                            font-weight: bold;
+                                            font-size: 1em;
+                                            color: rgb(0, 255, 221);
+                                            background: rgba(0, 0, 0, 0.555);
+                                            padding: 10px 20px;
+                                            display: inline-block;
+                                            margin-top: 20px;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                            letter-spacing: 2px;
+                                            transition: 0.5s;
+                                            margin-left: 10px;
+                                        }
+                                        
+                                        .progg:hover {
+                                            letter-spacing: 4px;
+                                        }

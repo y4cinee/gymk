@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #1111;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    background: black;
+}
+
+.logo {
+    color: turquoise;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: rgb(255, 255, 255);
+}
+
+.navibar {
+    display: flex;
+    position: relative;
+}
+
+.navibar li {
+    list-style: none;
+}
+
+.navibar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 720;
+}
+
+.btn-connexion {
+    margin: -20px;
+    margin-left: 10px;
+}
+
+header .navibar li a:hover {
+    color: aqua;
+}
+
+.btn-connexion:hover {
+    color: aqua;
+}
+
+.prohn {
+    background-image: url(./wp2639541.jpg);
+    background-size: cover;
+}
+
+section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../wp2639541.jpg);
+    background-size: cover;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    padding: 12% 0;
+}
+
+.card {
+    padding: 50px;
+    background: rgba(18, 20, 20, 0.342);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+.card_title {
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    font-weight: normal;
+    font-size: 60px;
+    color: aqua;
+}
+
+.pricing .small {
+    font-size: 16px;
+    color: aqua;
+}
+
+hr {
+    margin-top: 70px;
+}
+
+.features {
+    margin: 40px 0;
+    list-style-position: inside;
+}
+
+.features li {
+    padding-bottom: 10px;
+}
+
+a.cta_btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: rgba(47, 56, 55, 0.7);
+    border-radius: 29px;
+    padding: 20px 0;
+    color: rgb(0, 206, 144);
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: background .3s ease;
+}
+
+a.cta_btn:hover {
+    background: #000;
+}
+
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -99px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: rgb(0, 206, 154);
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+        padding-bottom: 25%;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    body {
+        font-size: 14px;
+    }
+    .card {
+        padding: 30px;
+    }
+    .card_title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .pricing {
+        font-size: 52px;
+    }
+    hr {
+        margin-top: 50px;
+    }
+    a.cta_btn {
+        font-size: 11px;
+    }
+}

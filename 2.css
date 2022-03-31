@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: rgb(17, 17, 17);
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    background: black;
+}
+
+.logo {
+    color: turquoise;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: rgb(255, 255, 255);
+}
+
+.navibar {
+    display: flex;
+    position: relative;
+}
+
+.navibar li {
+    list-style: none;
+}
+
+.navibar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 720;
+}
+
+.btn-connexion {
+    margin: -20px;
+    margin-left: 10px;
+}
+
+header .navibar li a:hover {
+    color: aqua;
+}
+
+.btn-connexion:hover {
+    color: aqua;
+}
+
+.cont {
+    background-image: url(./wp2639541.jpg);
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    background: lightgray;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 150px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 120s infinite forwards linear;
+}
+
+.carousel__face {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.carousel__face:nth-child(1) {
+    background-image: url(./contact-map.png);
+    transform: rotateY( 0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url(./box.jpg);
+    transform: rotateY( 40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url(./muscu.jpg);
+    transform: rotateY( 80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url(./aqua.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+    background-image: url(./cardio.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+    background-image: url(./yogaa.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+    background-image: url(./fun.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+    background-image: url(./hor.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+    background-image: url(./atout.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
